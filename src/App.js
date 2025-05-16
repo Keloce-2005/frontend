@@ -5,7 +5,7 @@ function App() {
   const [tasks, setTasks] = useState([]);
   const [title, setTitle] = useState("");
 
-  const API_URL = "http://localhost:3001/tasks"; // change à l'adresse Azure plus tard
+  const API_URL = "https://oceane-backend-skander.azurewebsites.net/tasks"; // change à l'adresse Azure plus tard
 
   useEffect(() => {
     axios.get(API_URL).then(res => setTasks(res.data));
